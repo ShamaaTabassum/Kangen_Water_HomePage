@@ -1,22 +1,28 @@
-const shopDownArrow=document.querySelector('.shop');
-const submenuListShop=document.querySelector('.submenu-list-shop');
-const contactDownArrow=document.querySelector('.contact');
-const submenuListContact=document.querySelector('.submenu-list-contact');
+const toggleBtn=document.querySelector('.menu-toggle-btn');
+const header=document.querySelector('.header');
+const menuItems1=document.querySelector('.menu-items1');
+const toggleMenu=()=>{
+    header.classList.toggle("active1");
+ menuItems1.classList.toggle("active");
+}
+toggleBtn.addEventListener("click",()=>toggleMenu())
 
-const toggleDropArrow1=()=>{
-    submenuListShop.classList.add('submenu-active');
+const downArrowShop=document.querySelector(".down-arrow-shop");
+const shop=document.querySelector(".menu-items");
+const toggleShopArrow=()=>{
+    shop.classList.toggle("subactive")
 }
-shopDownArrow.addEventListener("mouseover",()=>toggleDropArrow1());
-const toggleDropArrow2=()=>{
-    submenuListShop.classList.remove('submenu-active');
+downArrowShop.addEventListener("click",()=>toggleShopArrow());
+const downArrowContact=document.querySelector(".down-arrow-contact");
+const contact=document.querySelector(".menu-items");
+const toggleContactArrow=()=>{
+    shop.classList.toggle("subactive1")
 }
-shopDownArrow.addEventListener("mouseout",()=>toggleDropArrow2());
-const toggleDropArrow3=()=>{
-    submenuListContact.classList.add('submenu-active');
-}
-contactDownArrow.addEventListener("mouseover",()=>toggleDropArrow3());
+downArrowContact.addEventListener("click",()=>toggleContactArrow());
 
-const toggleDropArrow4=()=>{
-    submenuListContact.classList.remove('submenu-active');
+const sec6=document.querySelector(".bottom-sec6");
+const playIcon=document.querySelector(".play-btn");
+const playBtn=()=>{
+    sec6.classList.add("play");
 }
-contactDownArrow.addEventListener("mouseout",()=>toggleDropArrow4());
+playIcon.addEventListener("click",()=>playBtn());

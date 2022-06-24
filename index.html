@@ -5,80 +5,324 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kangendubai</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Kangen Dubai</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="header">
-        <img src="images/logo.png" alt="KANGEN WATER" class="logo">
-        <div class="header-items">
-            <nav class="navbar">
-                <li class="nav-items"><a href="#">Home</a></li>
-                <li class="nav-items"><a href="#">Enagic</a></li>
-                <li class="nav-items"><a href="#">About</a></li>
-                <li class="nav-items shop">
-                    <a href="#">Shop
-                        <div class="dropdown-menu-toggle ">
-                            <ion-icon name="ios-arrow-down"></ion-icon>
-                        </div>
-                    </a>
-                    <ul class="submenu-list-shop">
-
-                        <li class="submenu-shop"><a href="#"><span class="sidearrow">
-                                    <ion-icon name="ios-arrow-forward"></ion-icon>
-                                </span>Kangen Equipments</a></li>
-
-                        <li class="submenu-shop"><a href="#"><span class="sidearrow">
-                                    <ion-icon name="ios-arrow-forward"></ion-icon>
-                                </span>Sanitizer</a></li>
-
-                        <li class="submenu-shop"><a href="#"><span class="sidearrow">
-                                    <ion-icon name="ios-arrow-forward"></ion-icon>
-                                </span>Vagepod</a></li>
-
-                        <li class="submenu-shop"><a href="#"><span class="sidearrow">
-                                    <ion-icon name="ios-arrow-forward"></ion-icon>
-                                </span>Water Containers</a></li>
-
-                        <li class="submenu-shop"><a href="#"><span class="sidearrow">
-                                    <ion-icon name="ios-arrow-forward"></ion-icon>
-                                </span>Water Purifiers</a></li>
-                    </ul>
-                </li>
-                <li class="nav-items"><a href="#">Certificate</a></li>
-                <li class="nav-items contact"><a href="#" class="contact">Contact Us<div class="dropdown-menu-toggle">
-                            <ion-icon name="ios-arrow-down"></ion-icon>
-                        </div>
-                    </a>
-                    <ul class="submenu-list-contact">
-                        <li class="submenu-contact"><a href=""><span class="sidearrow">
-                                    <ion-icon name="ios-arrow-forward"></ion-icon>
-                                </span>Office Locator & Contact</a></li>
-                    </ul>
-                </li>
-            </nav>
-            <a href="" class="navbar-btn">Webinar</a>
-            <div class="cart">
-                <a href="" class="cart-item">Cart</a>
-                <div class="count">
-                    <span>0</span>
+    <!-- Header starts here -->
+    <header>
+        <div class="header active1">
+            <div class="menu">
+                <img src="images/logo.jpg" alt="Kangen Dubai" class="logo">
+                <div class="menu-toggle-btn">
+                    <ion-icon name="menu" class=' bar-menu menu-btn'></ion-icon>
+                    <ion-icon name="close" class="close-menu menu-btn"></ion-icon>
                 </div>
             </div>
-            <div class="menu-toggle-btn">
-                <ion-icon name="menu" class=' bar-menu menu-btn'></ion-icon>
-                <ion-icon name="close" class="close-menu menu-btn"></ion-icon>
+            <div class="menu-items1 active">
+                <div class="menu-items">
+                    <nav class="navbar">
+                        <ul>
+                            <li class="nav-items"><a href="#" class="nav-text">Home</a></li>
+                            <li class="nav-items"><a href="#" class="nav-text">Enagic</a></li>
+                            <li class="nav-items"><a href="#" class="nav-text">About</a></li>
+                            <li class="nav-items shop   "><a href="#" class="nav-text ">Shop<span
+                                        class="down-arrow down-arrow-shop ">
+                                        <ion-icon name="ios-arrow-down"></ion-icon>
+                                    </span></a>
+                                <ul class="submenu-list-shop ">
+                                    <li class="shop-items"><a href="#" class="shop-text"><span class="sidearrow">
+                                                <ion-icon name="ios-arrow-forward"></ion-icon>
+                                            </span>Kangen Equipments</a></li>
+                                    <li class="shop-items"><a href="" class="shop-text"><span class="sidearrow">
+                                                <ion-icon name="ios-arrow-forward"></ion-icon>
+                                            </span>Sanitizer</a></li>
+                                    <li class="shop-items"><a href="" class="shop-text"><span class="sidearrow">
+                                                <ion-icon name="ios-arrow-forward"></ion-icon>
+                                            </span>Vagepod</a></li>
+                                    <li class="shop-items"><a href="" class="shop-text"><span class="sidearrow">
+                                                <ion-icon name="ios-arrow-forward"></ion-icon>
+                                            </span>Water Containers</a></li>
+                                    <li class="shop-items"><a href="" class="shop-text"><span class="sidearrow">
+                                                <ion-icon name="ios-arrow-forward"></ion-icon>
+                                            </span>Water Purifiers</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-items"><a href="" class="nav-text">Certificate</a></li>
+                            <li class="nav-items contact"><a href="#" class="nav-text">Contact Us<span
+                                        class="down-arrow down-arrow-contact">
+                                        <ion-icon name="ios-arrow-down"></ion-icon>
+                                    </span></a>
+                                <ul class="submenu-list-contact">
+                                    <li class="contact-items "><a href="#" class="contact-text"><span class="sidearrow">
+                                                <ion-icon name="ios-arrow-forward"></ion-icon>
+                                            </span>Office Locator & Contact</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div><a href="#" class="navbar-btn">Webinar</a></div>
+                    </nav>
+                    <div class="pop">
+                        <div class="cart">
+                            <a href="" class="cart-item">Cart</a>
+                            <div class="count">
+                                <span>0</span>
+                            </div>
+                        </div>
+                        <span class="pop-up">No products in the cart.</span>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
-    <!-- Script started here -->
+    <!-- Header endss here -->
+    <!-- Hero Section starts here -->
+    <section>
+        <div class="hero">
+            <div class="content">
+                <h2 class="heading-1" data-aos="slide-down">Kangen Water</h2>
+                <h2 class="heading-2" data-aos="slide-up">FOR EVERY DAY</h2>
+                <p>Make your own healthy, alkaline<br>
+                    water! Change Your<br>
+                    Water- Change Your Life!</p>
+                <div class="hero-btn">
+                    <a href="" class="btn btn1" data-aos="slide-right" data-aos-offset="100">Read more</a>
+                    <a href="" class="btn btn2" data-aos="slide-left" data-aos-offset="100">Make order</a>
+                </div>
+            </div>
+        </div>
+        <div class="shape"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                <path class="elementor-shape-fill" opacity="0.33"
+                    d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z">
+                </path>
+                <path class="elementor-shape-fill" opacity="0.66"
+                    d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z">
+                </path>
+                <path class="elementor-shape-fill"
+                    d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z">
+                </path>
+            </svg></div>
+    </section>
+    <!-- Section-2 starts here -->
+    <section class="sec-2">
+        <div class="content-sec2">
+            <div class="left-content-sec2" data-aos="slide-left">
+                <div class="left-sec2">
+                    <h2>Calcium+<br><span>5-12 mg/dm3</span></h2>
+                    <p>Calcium is a mineral most often associated with healthy bones and teeth.</p>
+                </div>
+                <div class="left-sec2">
+                    <h2>Magnesium<br><span>2-5 mg/dm3</span></h2>
+                    <p>Magnesium plays many crucial roles in the body, such as supporting muscl</p>
+                </div>
+                <div class="left-sec2">
+                    <h2>Sodium<br><span>20-25 mg/dm3</span></h2>
+                    <p>Sodium to conduct nerve impulses, contract and relax muscles,</p>
+                </div>
+            </div>
+            <div class="center-content-sec2">
+                <div class="center-sec2">
+                    <p data-aos="slide-down">What inside</p>
+                    <h2 data-aos="slide-up">Mineral composition</h2>
+                    <img src="images/heading-bg.png" alt="" data-aos="ease-out">
+                </div>
+                <div class="glass-img">
+                    <img src="images/glass.png" alt="" class="glass">
+                </div>
+            </div>
+            <div class="right-content-sec2" data-aos="slide-right">
+                <div class="right-sec2">
+                    <h2>Chlorine<br><span>~46 mg/dm3</span></h2>
+                    <p>Play role in pressure of extracellular fluids and in the acid-base balance of the body.</p>
+                </div>
+                <div class="right-sec2">
+                    <h2>Sourness<br><span>6,8-7,3</span></h2>
+                    <p>it's more likely caused by an infection, illness, or medicine you've taken can be remove by
+                        Kangen Water</p>
+                </div>
+                <div class="right-sec2">
+                    <h2>Mineralization<br><span>90-140 mg/dm3</span></h2>
+                    <p>Mineralization responsible for the development of hard tissues, such as bone, cartilage, and
+                        teeth,</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section-3 starts here -->
+    <section class="sec-3">
+        <div class="top-sec3">
+            <p data-aos="slide-up">Our Products</p>
+            <h2 data-aos="slide-down">Choose your water</h2>
+            <img src="images/heading-bg.png" alt="" data-aos="ease-out">
+        </div>
+        <div class="bottom-sec3">
+            <div class="bottom-content-sec3">
+                <img src="images/sec3-1.jpg" alt="">
+                <h2>Super 501</h2>
+                <div>22,575</div>
+                <a href="#">Add to cart</a>
+            </div>
+            <div class="bottom-content-sec3">
+                <img src="images/sec3-2.jpg" alt="">
+                <h2>Leveluk SD501</h2>
+                <div>15,698</div>
+                <a href="#">Add to cart</a>
+            </div>
+            <div class="bottom-content-sec3">
+                <img src="images/sec3-3.jpg" alt="">
+                <h2>Leveluk K8</h2>
+                <div>20,213</div>
+                <a href="#">Add to cart</a>
+            </div>
+            <div class="bottom-content-sec3">
+                <img src="images/sec3-4.jpg" alt="">
+                <h2>SD501 Platinum</h2>
+                <div>17,273</div>
+                <a href="#">Add to cart</a>
+            </div>
+        </div>
+        <div class="sec3-btn" data-aos="slide-up">
+            <a href="#">all products</a>
+        </div>
+    </section>
+    <!-- section-4 starts here -->
+    <section class="sec-4">
+        <div class="sec4-img">
+            <img src="images/sec4.png" alt="" data-aos="slide-right">
+        </div>
+        <div class="right-sec4">
+            <h2 data-aos="slide-up">Leveluk <span>K8</span></h2>
+            <p data-aos="slide-up">The K8 is <span><strong>Enagic®’s</strong></span> most powerful antioxidant machine -
+                featuring 8
+                platinum-dipped titanium
+                plates for improved water ionization and increased antioxidant production potential. If you're looking
+                for a powerful, versatile, feature-loaded machine, the Kangen® 8 is for you.</p>
+            <ul data-aos="slide-down">
+                <li class="sec4-list"><span>
+                        <i class="fa-solid fa-check"></i>
+                    </span> to operate</li>
+                <li class="sec4-list"><span>
+                        <i class="fa-solid fa-check"></i>
+                    </span>5 Water types</li>
+                <li class="sec4-list"><span>
+                        <i class="fa-solid fa-check"></i>
+                    </span>Fully Automatic</li>
+            </ul>
+            <a href="#">Make order</a>
+        </div>
+    </section>
+    <!-- section5 starts here -->
+    <section class="sec-5">
+        <div class="sec5-1">
+            <h2>Our company was founded in 1965</h2>
+            <p>Kangen is ideal for drinking, cooking, sports and even for children. The product is certified in 12
+                countries.</p>
+        </div>
+        <div class="left-sec5">
+            <div class="sec5-2">
+                <img src="images/microscope.png" alt="" data-aos="fade-in">
+                <h2 data-aos="slide-up">Full Controll</h2>
+            </div>
+            <div class="sec5-2">
+                <img src="images/flasks.png" alt="" data-aos="fade-in">
+                <h2 data-aos="slide-up">Healthy Composition</h2>
+            </div>
+            <div class="sec5-2">
+                <img src="images/diploma.png" alt="" data-aos="fade-in">
+                <h2 data-aos="slide-up">6 Filtration Stages</h2>
+            </div>
+            <div class="sec5-2">
+                <img src="images/air-filte.png" alt="" data-aos="fade-in">
+                <h2 data-aos="slide-up">Quality certificates</h2>
+            </div>
+        </div>
+    </section>
+    <!-- section-6 starts here -->
+    <section class="sec-6">
+        <div class="top-sec6">
+            <p>Our Products</p>
+            <h2>Choose your water</h2>
+            <img src="images/heading-bg.png" alt="">
+        </div>
+        <div class="bottom-sec6" data-aos="slide-up">
+            <iframe frameborder="0" allowfullscreen="1"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                src="https://www.youtube.com/embed/J5-9EWa3tyQ?controls=0&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fkangendubai.com&amp;widgetid=1"
+                class="iframe"></iframe>
+            <div class="thumbnail">
+                <img src="images/video.png" alt="">
+                <ion-icon name="play" class="play-btn"></ion-icon>
+            </div>
+        </div>
+    </section>
+    <!-- section7  starts here -->
+    <section class="sec-7">
+        <div class="sec7-content" data-aos="slide-up">
+            <div class="quote">
+                <i class="fa fa-quote-right"></i>
+            </div>
+            <div class="sec7-img">
+                <img src="images/w7-100x100-1.jpg" alt="Client">
+            </div>
+            <div class="sec7-text">
+                <p><em>Along with the typical advantages of Kangen Water water, we found some rather surprising
+                        benefits. I
+                        was in the back yard picking up sticks off the grass and managed to grab a yellow jacket...OUCH!
+                        I
+                        immediately went into the house and set the ionizer on full Kangen and ran the water over the
+                        sting
+                        in my hand. The pain immediately stopped, but when I took it out of the water, it came back. I
+                        continued to run the water over the sting checking on it with each hand removal until it no
+                        longer
+                        stung (about 5 minutes). I then removed the stinger with a sewing pin and re-rinsed in Kangen
+                        water.
+                        There was no more pain and no swelling whatsoever! Amazing. We now take a supply of Kangen water
+                        with us camping</em></p>
+            </div>
+            <div class="sec7-star">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+            </div>
+            <div class="sec7-text2">
+                <p><em>Anastasia Stone <span class="sec7-spantext">Outdoor sports</span></em></p>
+            </div>
+        </div>
+    </section>
+    <!-- footer starts here -->
+    <footer>
+        <div class="footer-items">
+            <h2>INNOVATIVE WATER TECHNOLOGY Since 1974</h2>
+            <p>Enagic has been a pioneer and innovator in alkaline water ionization technologies. By integrating
+                scientific
+                research with superior Japanese craftsmanship Enagic’s Kangen Water® systems enhance nature’s most vital
+                life source, water, around the world</p>
+            <div class="icons">
+                <i class="fa-brands fa-facebook-f icon faceicon" data-aos="fade-in" data-aos-offset="100"></i>
+                <i class="fa-brands fa-twitter icon" data-aos="fade-in" data-aos-offset="100"></i>
+                <i class="fa-brands fa-instagram icon" data-aos="fade-in" data-aos-offset="100"></i>
+            </div>
+        </div>
+    </footer>
+    <!-- script starts here -->
     <script src="index.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/c1c1d1ace9.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            offset: 120
+        });
+    </script>
+    <!-- script ends here -->
 </body>
 
 </html>
